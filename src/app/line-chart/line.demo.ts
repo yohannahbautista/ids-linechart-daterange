@@ -99,56 +99,6 @@ export class LineDemoComponent implements OnInit {
           value: 14196,
           color: '#1a66ff',
         },
-        {
-          name: 'Feb 1',
-          value: 21057,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 2',
-          value: 31565,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 3',
-          value: 53411,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 4',
-          value: 52396,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 5',
-          value: 34845,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 6',
-          value: 26702,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 7',
-          value: 22551,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 8',
-          value: 33855,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 9',
-          value: 35938,
-          color: '#1a66ff',
-        },
-        {
-          name: 'Feb 10',
-          value: 34472,
-          color: '#1a66ff',
-        },
       ],
     },
   ];
@@ -161,16 +111,16 @@ export class LineDemoComponent implements OnInit {
     const parseDate = d3.timeParse('%b %d'),
       formatDate = d3.timeFormat('%b');
     const dates = this.lineData[0].data.map((d) => parseDate(d.name));
-    const minDate = d3.min(d3.values(dates)),
-      maxDate = d3.max(d3.values(dates));
+    const minDate = d3.min(d3.values(dates as any)),
+      maxDate = d3.max(d3.values(dates as any));
     this.xAxis = {
       scale: d3.scaleTime(),
       domain: [minDate, maxDate],
       ticks: d3.timeMonth,
-      formatter: (d, i) => {
+      formatter: (d: any) => {
         return formatDate(d);
       },
-      parser: (d, i) => {
+      parser: (d: any) => {
         return parseDate(d.name);
       },
     };

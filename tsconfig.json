@@ -12,16 +12,9 @@
     "importHelpers": true,
     "target": "es2015",
     "strict": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "types": [
-      "ids-enterprise-typings"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "typeRoots": ["node_modules/@types"],
+    "types": ["d3", "ids-enterprise-typings"],
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": false,
