@@ -99,6 +99,56 @@ export class LineDemoComponent implements OnInit {
           value: 14196,
           color: '#1a66ff',
         },
+        {
+          name: 'Feb 1',
+          value: 21057,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 2',
+          value: 31565,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 3',
+          value: 53411,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 4',
+          value: 52396,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 5',
+          value: 34845,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 6',
+          value: 26702,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 7',
+          value: 22551,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 8',
+          value: 33855,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 9',
+          value: 35938,
+          color: '#1a66ff',
+        },
+        {
+          name: 'Feb 10',
+          value: 34472,
+          color: '#1a66ff',
+        },
       ],
     },
   ];
